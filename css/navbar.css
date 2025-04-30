@@ -1,0 +1,113 @@
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(43, 41, 44, 0.991); /* transparente ou sólido */
+  padding: 30px 30px;
+  z-index: 999; /* fica por cima de tudo */
+
+}
+/* Quando rolar */
+.navbar.scrolled {
+  background-color: #1c0931; /* Cor sólida */
+  padding: 20px 30px; /* Encolhe a altura da navbar */
+}
+/*logo padrão*/
+.logo a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+/* Logo encolhido */
+.navbar.scrolled .logo {
+  font-size: 22px;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+ul .nav-links {
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .nav-links li a {
+  margin-left: 15px;
+  color: #c073df;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+}
+.links a {
+  margin-left: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+/* Links encolhidos */
+.navbar.scrolled .nav-links li a {
+  font-size: 24px;
+}
+/* Hero Section */
+.hero-section {
+  background-image: url(/assets/borboleta.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 1000px; /* ocupa toda a altura da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #c569c3;
+  text-align: center;
+  position: relative;
+  padding: 120px 15px 20px; /* espaço extra por causa da navbar */
+}
+
+.hero {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Sombra de fundo opcional */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
+}
+.hero a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+

@@ -1,0 +1,43 @@
+
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6rem;
+  padding: 4rem 6rem;
+  background-color: var(--cor-14);
+}
+
+.about-img img {
+  width: 40vw;
+  gap: 6rem;
+
+}
+
+.about-content {
+  max-width: 600px;
+}
+
+.titulo {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.titulo span {
+  color: var(--cor-5);
+}
+
+.about-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--cor-5);
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
